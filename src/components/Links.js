@@ -2,10 +2,18 @@ import React from "react";
 
 function Links({ github, linkedin }) {
   return (
-    <div>
+    <div className="links-container">
       <h3>Links</h3>
-      <a href={github}>{github}</a>
-      <a href={linkedin}>{linkedin}</a>
+      <div className="links-list">
+        <a href={github} className="link-item">
+          <i className="fab fa-github"></i>
+          GitHub
+        </a>
+        <a href={linkedin} className="link-item">
+          <i className="fab fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </div>
     </div>
   );
 }

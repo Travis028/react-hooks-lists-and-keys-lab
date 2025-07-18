@@ -7,11 +7,13 @@ import user from "../data/user";
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <NavBar />
-      <Home username={user.name} city={user.city} color={user.color} />
-      <About bio={user.bio} links={user.links} />
-      <ProjectList projects={user.projects} />
+      <div className="content-container">
+        <Home username={user.name} city={user.city} color={user.color} />
+        <About bio={user.bio} links={user.links} />
+        <ProjectList projects={user.projects} />
+      </div>
     </div>
   );
 }
